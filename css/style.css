@@ -1,0 +1,74 @@
+body {
+  height: 1500px;
+}
+
+.required {
+  color: red;
+}
+
+.message {
+  color: red;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  display: none;
+}
+
+.image-lable {
+  background-color: #e9efff;
+  color: #0f60df;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  border-radius: 3px;
+  border: 1px solid #7d7dff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.image-lable img {
+  max-width: 100%;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+#dragDrop .dragDropContainer .dragContainer, #dragDrop .dragDropContainer .dropContainer {
+  width: 400px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid;
+}
+
+#dragDrop .dragDropContainer .dragContainer img, #dragDrop .dragDropContainer .dropContainer img {
+  cursor: pointer;
+}
+
+#dragDrop .dragDropContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=style.css.map */

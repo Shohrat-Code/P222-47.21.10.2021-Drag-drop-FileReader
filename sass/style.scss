@@ -1,0 +1,65 @@
+body {
+  height: 1500px;
+}
+.required {
+  color: red;
+}
+
+.message {
+  color: red;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  display: none;
+}
+
+// #image {
+//   display: none;
+// }
+
+.image-lable {
+  background-color: #e9efff;
+  color: #0f60df;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  border-radius: 3px;
+  border: 1px solid #7d7dff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+    transform: scale(1.5);
+  }
+}
+
+%dropClass {
+  width: 400px;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  img {
+    cursor: pointer;
+  }
+}
+
+#dragDrop {
+  .dragDropContainer {
+    display: flex;
+    justify-content: space-between;
+    .dragContainer {
+      @extend %dropClass;
+    }
+    .dropContainer {
+      @extend %dropClass;
+    }
+  }
+}
